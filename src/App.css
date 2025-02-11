@@ -1,0 +1,243 @@
+.mi-amor-title {
+  font-family: "Cursive", sans-serif;
+  font-size: 3rem;
+  color: #ff4081;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 64, 129, 0.8), 
+               0 0 20px rgba(255, 64, 129, 0.6), 
+               0 0 30px rgba(255, 64, 129, 0.4);
+  animation: glow 1.5s infinite alternate ease-in-out;
+  animation: floatUp 2s infinite alternate ease-in-out;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 64, 129, 0.8), 
+                 0 0 20px rgba(255, 64, 129, 0.6);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(255, 64, 129, 1), 
+                 0 0 30px rgba(255, 64, 129, 0.9);
+  }
+}
+
+
+/* Valentine's Day Themed Background */
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Soft pink gradient */
+}
+
+/* Game Container */
+.game {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ff4d6d;
+}
+
+/* Game Board */
+.board {
+  display: inline-block;
+  border: 2px solid #ff4d6d;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Board Rows */
+.board-row {
+  display: flex;
+}
+
+/* Game Squares */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #ff4d6d;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover and Click Effect */
+.square:hover {
+  background-color: #ffd1dc;
+  transform: scale(1.05);
+}
+
+/* Love Icon (Heart Images) */
+.love-icon {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  animation: popIn 0.5s ease-in-out; /* Pop-in animation */
+}
+
+/* Pop-in Animation */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Reset Button */
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.reset:hover {
+  background-color: #ff1a4d;
+  transform: scale(1.1);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff0f6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(255, 0, 102, 0.5);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-title {
+  font-family: "Cursive", sans-serif;
+  font-size: 1.8rem;
+  color: #d63384;
+  animation: floatUp 2s infinite alternate ease-in-out;
+}
+
+.modal-footer {
+  font-style: italic;
+  color: #ff69b4;
+  margin-top: 10px;
+}
+
+.close-btn {
+  background: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: #d63384;
+}
+
+/* Floating Hearts */
+.modal-hearts {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-10px); }
+}
+
+
+/* Message Box - Positioned Below the Board */
+.message-box-container {
+  position: relative; /* Allows hearts to be positioned relative to this box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message-box {
+  margin-top: 20px;
+  background: rgba(255, 204, 213, 0.9);
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  color: #6b001b;
+  font-weight: bold;
+  border: 2px solid #ff4d6d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  min-height: 80px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Floating Hearts */
+.floating-heart {
+  position: absolute;
+  font-size: 32px; /* Increased size */
+  color: #ff4d6d;
+  animation: floatingHearts 1.5s infinite ease-in-out alternate;
+}
+
+/* Positioning multiple hearts */
+.floating-heart:nth-child(1) { top: -15px; left: -40px; animation-duration: 2s; }
+.floating-heart:nth-child(2) { top: -25px; right: -40px; animation-duration: 1.8s; }
+.floating-heart:nth-child(3) { bottom: -15px; left: -50px; animation-duration: 2.2s; }
+.floating-heart:nth-child(4) { bottom: -25px; right: -50px; animation-duration: 1.9s; }
+
+/* Floating Animation */
+@keyframes floatingHearts {
+  0% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(-10px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.8; }
+}

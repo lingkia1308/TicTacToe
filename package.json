@@ -2,7 +2,7 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lingkia1308.github.io/Tic-Tac-Toe/tic-tac-toe/",
+  "homepage": "https://lingkia1308.github.io/Tic-Tac-Toe/",
   "dependencies": {
     "@radix-ui/react-switch": "^1.1.3",
     "cra-template": "1.2.0",
