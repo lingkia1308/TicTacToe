@@ -1,16 +1,14 @@
 {
-  "name": "tic-tac-toe",
+  "name": "test",
+  "homepage": "https://lingkia1308.github.io/Tic-Tac-Toe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lingkia1308.github.io/Tic-Tac-Toe/",
   "dependencies": {
-    "@radix-ui/react-switch": "^1.1.3",
     "cra-template": "1.2.0",
-    "framer-motion": "^12.4.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,8 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
