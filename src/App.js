@@ -8,15 +8,15 @@ function App() {
   const [hearts] = useState([]); // Store floating hearts
 
   const loveImages = [
-    "/heart/heart1.png",
-    "/heart/heart2.png",
-    "/heart/heart3.png",
-    "/heart/heart4.png",
-    "/heart/heart5.png",
-    "/heart/heart6.png",
-    "/heart/heart7.png",
-    "/heart/heart8.png",
-    "/heart/heart9.png",
+    process.env.PUBLIC_URL + "/heart/heart1.png",
+    process.env.PUBLIC_URL + "/heart/heart2.png",
+    process.env.PUBLIC_URL + "/heart/heart3.png",
+    process.env.PUBLIC_URL + "/heart/heart4.png",
+    process.env.PUBLIC_URL + "/heart/heart5.png",
+    process.env.PUBLIC_URL + "/heart/heart6.png",
+    process.env.PUBLIC_URL + "/heart/heart7.png",
+    process.env.PUBLIC_URL + "/heart/heart8.png",
+    process.env.PUBLIC_URL + "/heart/heart9.png",
   ];
 
   const messages = [
